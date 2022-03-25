@@ -188,7 +188,6 @@
   
   
   
-  
     
     
     <div class="category row">
@@ -208,13 +207,11 @@
         
         
           
-          
   <div class="category-post-list">
     
     
   </div>
 
-          
   
   
     
@@ -235,7 +232,6 @@
       <div class="category-collapse collapse" id="collapse-eb24a0243a2b37178ade73a80b47af26" role="tabpanel" aria-labelledby="heading-eb24a0243a2b37178ade73a80b47af26">
         
         
-          
   <div class="category-post-list">
     
     
@@ -248,13 +244,17 @@
     
   </div>
 
+          
         
       </div>
     </div>
   
+          
+          
         
       </div>
     </div>
+  
   
 </div>
 
@@ -395,5 +395,20 @@
 <script  src="/js/boot.js" ></script>
 
 
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 </body>
 </html>

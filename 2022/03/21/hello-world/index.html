@@ -24,7 +24,7 @@
 <meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2022-03-21T09:56:11.819Z">
-<meta property="article:modified_time" content="2022-03-25T09:46:59.651Z">
+<meta property="article:modified_time" content="2022-03-25T10:00:01.283Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary_large_image">
   
@@ -196,7 +196,7 @@
   
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      416 字
+      392 字
     </span>
   
 
@@ -260,7 +260,12 @@ target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Gener
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo deploy<br></code></pre></td></tr></table></figure>
 <p>More info: <a
 target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs markdown">$$<br>E=mc^2<br>\frac&#123;1&#125;&#123;x^2-1&#125;<br>$$<br></code></pre></td></tr></table></figure>
+<p><span class="math display">\[
+\frac{1}{2}
+\]</span></p>
+<p><span class="math display">\[
+E = mc^2
+\]</span></p>
 
             </div>
             <hr>
@@ -503,5 +508,20 @@ target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment
 <script  src="/js/boot.js" ></script>
 
 
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 </body>
 </html>
