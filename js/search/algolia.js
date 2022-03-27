@@ -60,7 +60,9 @@ window.addEventListener('load', () => {
       container: '#algolia-search-input',
       showReset: false,
       showSubmit: false,
-      placeholder: GLOBAL_CONFIG.algolia.languages.input_placeholder,
+      searchOnEnterKeyPressOnly: true,
+      // placeholder: GLOBAL_CONFIG.algolia.languages.input_placeholder,
+      placeholder: "输入关键词后，按下回车键即可搜索文章...",
       showLoadingIndicator: true
     })
   ])
